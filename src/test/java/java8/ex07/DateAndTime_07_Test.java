@@ -16,9 +16,10 @@ public class DateAndTime_07_Test {
 
     @Test
     public void test_date_to_localdate() throws Exception {
-
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2017, Calendar.FEBRUARY, 12);
         // TODO Créer une date Java 1 (12/02/2017)
-        Date date = new Date(117, Calendar.FEBRUARY,12);
+        Date date = calendar.getTime();
 
         // TODO transformer la date en Instant
         Instant instant = date.toInstant();
